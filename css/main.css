@@ -37,12 +37,13 @@ header {
 }
 
 h1 {
-  font-family: "Courgette, cursive";
+  font-family: "Lobster Two", cursive;
   font-weight: bold;
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   color: #002;
   text-align: left;
   margin: 0;
+  margin-left: .5rem;
 }
 
 nav {
@@ -50,12 +51,21 @@ nav {
   left: 20%;
 }
 
+.absoolute {
+  top: 1rem;
+}
+
+.button {
+  margin-right: .9rem;
+}
+
 nav ul {
-  text-align: right;
   list-style-type: none;
-  font-family: "Cinzel, serif";
-  font-size: 1.9rem;
+  font-family: Courgette, cursive;
+  font-size: 1.5rem;
+  background-color: #fff;
   padding: 0;
+  margin-left: .5rem;
 }
 
 nav li {
@@ -69,42 +79,35 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #000;
+  background-color: #003;
   color: #fff;
 }
 
-h2 {
-  font-family: "Georgia; serif";
-  font-size: 1rem;
-  color: #fff;
-  padding: 0;
+.h2 {
+  font-family: Cookie, cursive;
+  font-size: 2rem;
 }
 
 p {
-  font-family: "Georgia; serif";
+  font-family: Georgia, serif;
+  margin-left: .5rem;
 }
 
 .j {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.4;
   color: #000;
 }
 
-.jj {
-  display: inline-block;
-  width: 45%;
-
-}
-
 .o {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.4;
   color: #000;
 }
 
 .oo {
-  display: inline-block;
-  width: 45%;
+  /* display: inline-block; */
+  /* width: 45%; */
 }
 
 .img-flex {
@@ -124,29 +127,28 @@ p {
 
 .hidden {
   overflow: hidden;
-  max-height: 150px;
+  max-height: 190px;
 }
 
 .beau {
   display: inline-block;
   width: 100%;
+  max-width: 15%;
 }
 
 .flex {
-  display: flex;
-  width: 40%;
-
+  /* display: flex; */
+  width: 100%;
 }
 
 .hex {
   display: inline-block;
-  width: 50%;
+  width: 100%;
   max-width: 50%;
 }
 
 .triangle {
   display: inline-block;
-  width: 50%;
   max-width: 50%;
 }
 
@@ -158,6 +160,29 @@ p {
     position: absolute;
   }
 
+  h1 {
+    font-size: 4rem;
+  }
+
+  .beau {
+    display: inline-block;
+    width: 100%;
+    max-width: 15%;
+  }
+
+  nav ul {
+    list-style-type: none;
+    font-family: Courgette, cursive;
+    font-size: 1.5rem;
+    background-color: #fff;
+    padding: 0;
+    margin-left: .5rem;
+  }
+
+  .absoolute {
+    top: 1rem;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
@@ -165,6 +190,20 @@ p {
   html {
     font-size: 110%;
     line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  .absoolute {
+    top: 1rem;
+  }
+
+  .beau {
+    display: inline-block;
+    width: 100%;
+    max-width: 15%;
   }
 
 }
@@ -176,6 +215,20 @@ p {
     line-height: 1.5;
   }
 
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  .absoolute {
+    top: 1rem;
+  }
+
+  .beau {
+    display: inline-block;
+    width: 100%;
+    max-width: 15%;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
@@ -184,9 +237,23 @@ p {
     font-size: 130%;
   }
 
+  .hex {
+    display: inline-block;
+    width: 20%;
+    max-width: 20%;
+  }
+
+  .triangle {
+    display: inline-block;
+    width: 20%;
+    max-width: 20%;
+  }
+
 }
 
 footer {
   font-family: "Georgia; serif";
   padding: 0;
+  text-align: center;
+  font-size: 1rem;
 }
